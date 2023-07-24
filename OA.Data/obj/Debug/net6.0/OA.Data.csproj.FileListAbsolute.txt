@@ -1,0 +1,12 @@
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\bin\Debug\net6.0\OA.Data.deps.json
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\bin\Debug\net6.0\OA.Data.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\bin\Debug\net6.0\OA.Data.pdb
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.csproj.AssemblyReference.cache
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.AssemblyInfoInputs.cache
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.AssemblyInfo.cs
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.csproj.CoreCompileInputs.cache
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\refint\OA.Data.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\OA.Data.pdb
+C:\Users\TGSUser142\source\repos\OAPractise\OA.Data\obj\Debug\net6.0\ref\OA.Data.dll
