@@ -13,12 +13,14 @@ namespace OA.Data
         [Key]
         public int Id { get; set; }
 
+        [Required]
         [ForeignKey(nameof(Country))]
         public int? CountryId { get; set; }
 
-        public virtual Country Country { get; set; }
+        public virtual Country? Country { get; set; }
 
+        [Required]
         [Column(TypeName = "varchar(50)")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }
