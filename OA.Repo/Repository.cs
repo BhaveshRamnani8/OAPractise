@@ -13,7 +13,6 @@ namespace OA.Repo
     {
         private readonly OAContext context;
         private DbSet<Employee> entities;
-        string errorMessage = string.Empty;
 
         public Repository(OAContext context)
         {
@@ -27,10 +26,9 @@ namespace OA.Repo
                 throw new ArgumentNullException("entity");
 
             entities.Remove(entity);
-            context.SaveChanges();
         }
 
-        public Employee Get(long id)
+        public Employee? Get(long id)
         {
             return entities.SingleOrDefault(s=> s.Id == id);
         }
@@ -46,16 +44,7 @@ namespace OA.Repo
                 throw new ArgumentNullException("entity");
 
             entities.Add(entity);
-            context.SaveChanges();
-        }
-
-        public void Remove(Employee entity)
-        {
-            if (entity == null)
-                throw new ArgumentNullException("entity");
-
-            entities.Remove(entity);
-        }
+        }        
 
         public void SaveChanges()
         {
@@ -66,8 +55,6 @@ namespace OA.Repo
         {
             if (entity is null)
                 throw new ArgumentNullException("entity");
-
-            context.SaveChanges();
         }
     }
 }

@@ -10,14 +10,9 @@ namespace OA.Service
         public EmployeeService(IRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
-        }
-        public void DeleteEmployee(Employee emp)
-        {
-            _employeeRepository.Remove(emp);
-            _employeeRepository.SaveChanges();
-        }
+        }        
 
-        public Employee GetEmployee(long id)
+        public Employee? GetEmployee(long id)
         {
             return _employeeRepository.Get(id);
         }
@@ -30,16 +25,19 @@ namespace OA.Service
         public void InsertEmployee(Employee emp)
         {
             _employeeRepository.Insert(emp);
+            _employeeRepository.SaveChanges();
         }
 
         public void UpdateEmployee(Employee emp)
         {
             _employeeRepository.Update(emp);
+            _employeeRepository.SaveChanges();
         }
 
-        public Country GetCountry(long id)
+        public void DeleteEmployee(Employee emp)
         {
-            return null;
+            _employeeRepository.Delete(emp);
+            _employeeRepository.SaveChanges();
         }
     }
 }

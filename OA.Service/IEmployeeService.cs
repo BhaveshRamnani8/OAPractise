@@ -10,7 +10,7 @@ namespace OA.Service
     public interface IEmployeeService
     {
         IEnumerable<Employee> GetEmployees();
-        Employee GetEmployee(long id);
+        Employee? GetEmployee(long id);
         void InsertEmployee(Employee emp);
         void UpdateEmployee(Employee emp);
         void DeleteEmployee(Employee emp);

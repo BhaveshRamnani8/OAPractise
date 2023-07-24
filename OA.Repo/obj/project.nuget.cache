@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mK6ROLaLTFKFCSmZMV1x5hn0py0MYIPTrR/g1eLcpv6UKV7Y4j87F+J2mJCjnigafNsu5/Ma3/8SD7rPiDw9Ag==",
+  "dgSpecHash": "yzFpG6FKPQCHw0me1J0i4KQBUM9SYV8EMxIjTvA79Xm+Eh9bVHI7Tlq9a3BXUCCo5yv7i/zL4fectuhiRP+AQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\TGSUser142\\source\\repos\\OAPractise\\OA.Repo\\OA.Repo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TGSUser142\\.nuget\\packages\\dataannotationsextensions\\5.0.1.27\\dataannotationsextensions.5.0.1.27.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -48,5 +49,16 @@
     "C:\\Users\\TGSUser142\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DataAnnotationsExtensions 5.0.1.27' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DataAnnotationsExtensions",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

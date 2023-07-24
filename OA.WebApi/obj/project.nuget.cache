@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dcpBYL4N4sxCfMvq5oVXkSDlJQFASfMMjyKByu4sU215qRi7kdrZXetCQsowS0P3t2RPqULEyz5JCMyjWQDuLA==",
+  "dgSpecHash": "Hx9Aa8bc78RhliKzoG3aCiO1RVa0IVGwL0qDhTyKpdWiZa3m+wIeAQ8KtQqu2sJxcMaSjjr0+BLnOScJc3Ef6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\TGSUser142\\source\\repos\\OAPractise\\OA.WebApi\\OA.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TGSUser142\\.nuget\\packages\\dataannotationsextensions\\5.0.1.27\\dataannotationsextensions.5.0.1.27.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -226,5 +227,16 @@
     "C:\\Users\\TGSUser142\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\TGSUser142\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DataAnnotationsExtensions 5.0.1.27' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DataAnnotationsExtensions",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
