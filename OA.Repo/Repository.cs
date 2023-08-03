@@ -51,10 +51,29 @@ namespace OA.Repo
             context.SaveChanges();
         }
 
-        public void Update (Employee entity)
+        public void Update (Employee emp)
         {
-            if (entity is null)
+            if (emp is null)
                 throw new ArgumentNullException("entity");
+            var employee = entities.SingleOrDefault(s=> s.Id==emp.Id);
+
+            if (employee == null)
+                throw new ArgumentNullException("User not found");
+
+            employee.FirstName = emp.FirstName;
+            employee.LastName = emp.LastName;
+            employee.Email = emp.Email;
+            employee.Gender = emp.Gender;
+            employee.MaritalStatus = emp.MaritalStatus;
+            employee.Salary = emp.Salary;
+            employee.BirthDate = emp.BirthDate;
+            employee.Hobbies = emp.Hobbies;
+            employee.Address = emp.Address;
+            employee.CountryId = emp.CountryId;
+            employee.StateId = emp.StateId;
+            employee.CityId = emp.CityId;
+            employee.ZipCode = emp.ZipCode;
+            employee.Password = emp.Password;
         }
     }
 }
