@@ -254,3 +254,8 @@ C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\OA.Data.p
 C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\OA.Repo.pdb
 C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\OA.Service.pdb
 C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\DataAnnotationsExtensions.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\TGSUser142\source\repos\OAPractise\OA.WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

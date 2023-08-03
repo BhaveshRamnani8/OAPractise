@@ -109,6 +109,7 @@ namespace OA.WebApi.Controllers
         {
             return new Employee()
             {
+                Id = empDto.Id,
                 FirstName = empDto.FirstName,
                 LastName = empDto.LastName,
                 Email = empDto.Email,
