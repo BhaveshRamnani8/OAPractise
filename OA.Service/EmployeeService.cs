@@ -20,6 +20,11 @@ namespace OA.Service
         public IEnumerable<Employee> GetEmployees()
         {
             return _employeeRepository.GetAll();
+        }        
+
+        public PagedWrapper<T> GetPageResponse<T>(PaginationFilter pageFilter)
+        {
+            return _employeeRepository.GetPageResponse<T>(pageFilter);
         }
 
         public void InsertEmployee(Employee emp)

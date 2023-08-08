@@ -36,6 +36,21 @@ namespace OA.Repo
         public IEnumerable<Employee> GetAll()
         {
             return entities.AsEnumerable();
+        }        
+
+        public PagedWrapper<Employee> GetPageResponse<Employee>(PaginationFilter pageFilter)
+        {
+            var data = entities.Skip((pageFilter.PageNumber - 1) * pageFilter.PageSize)
+                           .Take(pageFilter.PageSize).ToList();
+            
+            var response = new PagedWrapper<Employee>(data, pageFilter.PageNumber, pageFilter.PageSize);
+            
+            var totalRecords = entities.Count();
+            var totalPages = (double)totalRecords / pageFilter.PageSize;
+            int roundedTotalPages = Convert.ToInt32(Math.Ceiling(totalPages));
+            response.TotalPages = roundedTotalPages;
+            response.TotalRecords = totalRecords;
+            return response;
         }
 
         public void Insert(Employee entity)
