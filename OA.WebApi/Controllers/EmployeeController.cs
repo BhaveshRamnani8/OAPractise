@@ -13,12 +13,12 @@ namespace OA.WebApi.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService employeeService;
-        private readonly IHubContext<EmployeeHub, IEmployeeHub> _hubContext;
+        //private readonly IHubContext<EmployeeHub, IEmployeeHub> _hubContext;
         
-        public EmployeeController(IEmployeeService empService, IHubContext<EmployeeHub,IEmployeeHub> hubContext)
+        public EmployeeController(IEmployeeService empService/*, IHubContext<EmployeeHub,IEmployeeHub> hubContext*/)
         {
             employeeService = empService;
-            _hubContext = hubContext;
+          //  _hubContext = hubContext;
         }
 
         //[HttpGet]
@@ -39,9 +39,7 @@ namespace OA.WebApi.Controllers
         {
             var pageFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
             var response = employeeService.GetPageResponse<Employee>(pageFilter);
-            response.Data = ((List<Employee>)response.Data).Select(emp => GetEmployeeDtoStructure(emp)).ToList();
-
-            //_hubContext.Clients.All.SendAsync("RefreshList", "new hub list");            
+            response.Data = ((List<Employee>)response.Data).Select(emp => GetEmployeeDtoStructure(emp)).ToList();           
 
             return Ok(response);
         }
@@ -68,7 +66,7 @@ namespace OA.WebApi.Controllers
             employeeService.InsertEmployee(emp);
             empDto.Id = emp.Id;
 
-            _hubContext.Clients.All.RefreshEmployeeList(empDto);
+           // _hubContext.Clients.All.RefreshEmployeeList(empDto);
 
             return CreatedAtAction(nameof(GetById), new { id = emp.Id }, empDto);
         }

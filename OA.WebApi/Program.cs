@@ -50,12 +50,12 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapPost("broadcast", async (EmployeeDto emp, IHubContext<EmployeeHub, IEmployeeHub> context) =>
-{
-    await context.Clients.All.RefreshEmployeeList(emp);
-    return Results.Ok();
-});
+//app.MapPost("broadcast", async (EmployeeDto emp, IHubContext<EmployeeHub, IEmployeeHub> context) =>
+//{
+//    await context.Clients.All.RefreshEmployeeList(emp);
+//    return Results.Ok();
+//});
 
-app.MapHub<EmployeeHub>("/employeeHub");
+app.MapHub<EmployeeHub>("/hubs/employeeHub");
 
 app.Run();

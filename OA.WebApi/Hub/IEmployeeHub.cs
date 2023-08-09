@@ -4,6 +4,6 @@ namespace OA.WebApi
 {
     public interface IEmployeeHub
     {
-        public Task RefreshEmployeeList(EmployeeDto emp);
+        Task RefreshEmployeeList(EmployeeDto emp);
     }
 }

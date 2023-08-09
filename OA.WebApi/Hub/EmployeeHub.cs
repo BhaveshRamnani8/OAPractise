@@ -6,16 +6,16 @@ using OA.WebApi.DTO;
 
 namespace OA.WebApi
 {
-    public class EmployeeHub : Hub<IEmployeeHub>
+    public class EmployeeHub : Hub
     {
         public override async Task OnConnectedAsync()
         {
             //await Clients.All.RefreshEmployeeList($"{Context.ConnectionId} has joined");
         }
 
-        public async Task RefreshEmployeeList (EmployeeDto emp)
+        public async Task SendMessage (object empData)
         {
-            await Clients.All.RefreshEmployeeList(emp);
+            await Clients.All.SendAsync("ReceiveMessage", empData);
         }
     }
 }
