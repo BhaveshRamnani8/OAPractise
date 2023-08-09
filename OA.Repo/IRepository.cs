@@ -10,6 +10,7 @@ namespace OA.Repo
     public interface IRepository
     {
         IEnumerable<Employee> GetAll();
+        PagedWrapper<T> GetPageResponse<T>(PaginationFilter pageFilter);
         Employee? Get(long id);
         void Insert(Employee emp);
         void Update(Employee emp);
